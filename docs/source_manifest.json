@@ -1,0 +1,31 @@
+{
+  "origin": "Private seshat_Journal research workspace",
+  "source_variant": "knowledge_nodes_v1",
+  "modules": [
+    {
+      "source_module": "contract.py",
+      "original_sha256": "c8f91c48ef2d09d94995a1801dde9b9b5a0af7c73e177cc2d93645dba19fc483",
+      "public_sha256": "14908660a9ea2b10030191e0fd5b6ffd820ef96623538a3b56b6055ae164bff4",
+      "adaptation": "Package-relative imports only; algorithm and prompts preserved."
+    },
+    {
+      "source_module": "dictionary.py",
+      "original_sha256": "f594c4cd07710f72112c3c1f2cb395bf780d4046fd218050e0c48f210905e184",
+      "public_sha256": "dd4cec3d226f5d0e2634919688fb351d871db97a36b53b786a113001b6c76e50",
+      "adaptation": "Package-relative imports only; algorithm and prompts preserved."
+    },
+    {
+      "source_module": "lexical.py",
+      "original_sha256": "b484979a8682592ee45298f5cda4ac4917e4c12c233fbd3726ffe724703e9eb3",
+      "public_sha256": "cd64f3ef97dfad6509a8ec62a7aa1d07769fe65174f90fd1baa3e0f5b823f784",
+      "adaptation": "Package-relative imports only; algorithm and prompts preserved."
+    },
+    {
+      "source_module": "node_verifier.py",
+      "original_sha256": "a77c3c404b20fdc8ba637edb518c999acb20de041af7665329e6940e28be0dcd",
+      "public_sha256": "a77c3c404b20fdc8ba637edb518c999acb20de041af7665329e6940e28be0dcd",
+      "adaptation": "Package-relative imports only; algorithm and prompts preserved."
+    }
+  ],
+  "excluded": "Credentials, personal conversations, HPC paths, raw predictions, trace payloads, operational logs, vendored repositories and private Git history."
+}

@@ -1,0 +1,16 @@
+{
+  "state": "VERIFIED_FINAL_KNOWLEDGE_NODES_AUDIT",
+  "observed_at": 1791952708.6541514,
+  "questions": 64,
+  "bundles": 16,
+  "ordered_id_sha256": "a7386318f2af7bcd7aa36597cd072e18747eb7b27e1e03ba74296d7ca528f21e",
+  "new_gpu_calls": 140,
+  "node_build_gpu_calls": 0,
+  "manifest_sha256": "ad61f54b1591208edb4837bc5c6b7256d3a98ac1bf14b6a1711a2661765f1f52",
+  "summary_sha256": "65efe38df272ae87039bb51c8e1b4b7d66ee81db1e45cc964bd4b25b4a29f178",
+  "paired_csv_sha256": "7d774d3b0387fc42460759e90ffda635c0ad012054227791958290e04a675f6f",
+  "reused_baselines_verified": true,
+  "complete_evidence": 63,
+  "execution_evidence": "16 accepted bundles: same real model PID/model-sized memory/nonzero real-forward CUDA traces, exact prompt/token/source/typed-node bindings; final snapshot physical GPU lane nonoverlap; no CPU inference",
+  "verification_scope": "Historical internal audit metadata; raw prediction and CUDA trace payloads are not distributed in this showcase."
+}

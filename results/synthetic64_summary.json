@@ -1,0 +1,141 @@
+{
+  "state": "VERIFIED_DICTIONARY_PREEXPERIMENT",
+  "questions": 64,
+  "interpretation": "Rule-compiled typed knowledge nodes plus model-directed node access; synthetic development only",
+  "arms": [
+    {
+      "arm": "raw",
+      "accuracy": 64.0625,
+      "mean_memory_tokens": 488.578125,
+      "mean_external_read_tokens": 488.578125,
+      "mean_all_calls": 1.0,
+      "mean_all_input_tokens": 605.9375,
+      "mean_all_output_tokens": 9.5,
+      "mean_evidence_coverage": 1.0,
+      "complete_evidence": 64
+    },
+    {
+      "arm": "dictionary_v1",
+      "accuracy": 76.5625,
+      "mean_memory_tokens": 33.1875,
+      "mean_external_read_tokens": 99.78125,
+      "mean_all_calls": 2.0,
+      "mean_all_input_tokens": 396.5,
+      "mean_all_output_tokens": 30.75,
+      "mean_evidence_coverage": 0.8489583333333334,
+      "complete_evidence": 51
+    },
+    {
+      "arm": "dictionary",
+      "accuracy": 90.625,
+      "mean_memory_tokens": 155.25,
+      "mean_external_read_tokens": 323.421875,
+      "mean_all_calls": 2.1875,
+      "mean_all_input_tokens": 679.0,
+      "mean_all_output_tokens": 22.234375,
+      "mean_evidence_coverage": 0.9947916666666666,
+      "complete_evidence": 63
+    }
+  ],
+  "quality_by_kind": [
+    {
+      "arm": "raw",
+      "kind": "date",
+      "n": 16,
+      "accuracy": 100.0
+    },
+    {
+      "arm": "raw",
+      "kind": "negation",
+      "n": 16,
+      "accuracy": 87.5
+    },
+    {
+      "arm": "raw",
+      "kind": "multihop",
+      "n": 16,
+      "accuracy": 68.75
+    },
+    {
+      "arm": "raw",
+      "kind": "numeric",
+      "n": 16,
+      "accuracy": 0.0
+    },
+    {
+      "arm": "dictionary_v1",
+      "kind": "date",
+      "n": 16,
+      "accuracy": 100.0
+    },
+    {
+      "arm": "dictionary_v1",
+      "kind": "negation",
+      "n": 16,
+      "accuracy": 100.0
+    },
+    {
+      "arm": "dictionary_v1",
+      "kind": "multihop",
+      "n": 16,
+      "accuracy": 18.75
+    },
+    {
+      "arm": "dictionary_v1",
+      "kind": "numeric",
+      "n": 16,
+      "accuracy": 87.5
+    },
+    {
+      "arm": "dictionary",
+      "kind": "date",
+      "n": 16,
+      "accuracy": 100.0
+    },
+    {
+      "arm": "dictionary",
+      "kind": "negation",
+      "n": 16,
+      "accuracy": 100.0
+    },
+    {
+      "arm": "dictionary",
+      "kind": "multihop",
+      "n": 16,
+      "accuracy": 81.25
+    },
+    {
+      "arm": "dictionary",
+      "kind": "numeric",
+      "n": 16,
+      "accuracy": 81.25
+    }
+  ],
+  "paired": {
+    "win": 20,
+    "tie": 41,
+    "loss": 3
+  },
+  "paired_vs_dictionary_v1": {
+    "win": 11,
+    "tie": 51,
+    "loss": 2
+  },
+  "controller_round_histogram": {
+    "1": 52,
+    "2": 12
+  },
+  "nodes": {
+    "total_payload_bytes": 101408,
+    "mean_visited_nodes": 2.65625,
+    "build_model_calls": 0,
+    "source_policy": "Query-blind exact template parser; source-only typed nodes; originals retained. Not general LLM Wiki extraction."
+  },
+  "memory": {
+    "total_dictionary_payload_bytes": 126656,
+    "mean_dictionary_python_shallow_bytes": 4978.0,
+    "invalid_controller_calls": 0,
+    "note": "RAM dictionary object+strings only; index, model and process peak RAM not included. IDs are ordinary tokenizer strings, not registered single tokens. All rereads count against 8K."
+  },
+  "release_scope": "Sanitized aggregate results from the completed 64-question synthetic development experiment. Not public-benchmark performance."
+}
